@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SceneManagerScript" format=3 uid="uid://dtuug1f4b2jh"]
+
+[ext_resource type="Script" uid="uid://70i45fiiwwde" path="res://Assets/scripts/resource_scenes.gd" id="1_4sni8"]
+
+[resource]
+script = ExtResource("1_4sni8")
+script_source_file = "res://Assets/scripts/Continue1Resume.txt"
+script_content = "Alien_Background.png
+<SHOW!G!neutral@Character_Left>
+3: \"This is regular computer use in the Triangulum galaxy. I transferred here to share peace and advancement with you humans, yet your clunky machines confound me.\"
+GREG_GK.wav
+\"How does somebody summon an interdimensional portal with a spreadsheet?\"
+-Take her at her word=>Continue2
+-Looks suspicious=>BadEnd2"

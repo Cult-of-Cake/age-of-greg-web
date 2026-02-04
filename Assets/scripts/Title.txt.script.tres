@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SceneManagerScript" format=3 uid="uid://c8knltdnojnyq"]
+
+[ext_resource type="Script" uid="uid://70i45fiiwwde" path="res://Assets/scripts/resource_scenes.gd" id="1_enkmy"]
+
+[resource]
+script = ExtResource("1_enkmy")
+script_source_file = "res://Assets/scripts/Title.txt"
+script_content = "80s_Synthwave.wav
+Title Screen - No Logo.png
+<TITLE!>
+...3
+-Start=>Beginning
+"

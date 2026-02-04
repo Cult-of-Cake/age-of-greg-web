@@ -42,7 +42,14 @@ var displacementVector
 var displacementFactor = 1.0
 var homePosition
 
+var AudioManager : Node2D
+var BG_Image : TextureRect
+var BG_Backgrounds : Dictionary
+
 func _ready():
+	AudioManager = $"/root/AudioManager"
+	BG_Image = $BG_Image
+	BG_Backgrounds = BG_Image.Backgrounds
 	visible = false
 	LoadAllScripts()
 	FillCharacterArray()
@@ -104,10 +111,11 @@ func LoadAllScripts():
 			print("Found ", fname)
 			if fname == "":
 				break
+			if not fname.contains(".script.tres"):
+				continue
 			if not fname.begins_with(".") and not fname.begins_with("_"):
 				var script_name = fname.substr(0, fname.rfind("."))
 				LoadScript(script_name)
-		dir.list_dir_end()
 	else:
 		print("!!!Error opening " + script_path + "!!!")
 
@@ -213,7 +221,7 @@ func _input(event):
 
 # The main one
 func BeginScene(script_name):
-	$BG_Image.visible = false
+	BG_Image.visible = false
 	$BranchOptions.visible = false
 	$Character_Left.texture = null
 	$Character_Right.texture = null
@@ -248,9 +256,9 @@ func BeginScene(script_name):
 				var player : AudioStreamPlayer
 				if cmd.file_ext == "wav":
 					# Ensure that we have 16-bit (can downgrade in Audacity)
-					$AudioManager.play_sfx("res://" + GetAudio(audio_path, cmd.file_name, "." + cmd.file_ext))
+					AudioManager.play_sfx(cmd.file_name)
 				elif cmd.file_ext == "ogg":
-					$AudioManager.play_bgm("res://" + GetAudio(audio_path, cmd.file_name, "." + cmd.file_ext))
+					AudioManager.play_bgm("res://" + GetAudio(audio_path, cmd.file_name, "." + cmd.file_ext))
 				#if player != null:
 					#player.stream = GetAudio(audio_path, cmd.file_name, "." + cmd.file_ext)
 					#player.stop()
@@ -258,8 +266,8 @@ func BeginScene(script_name):
 					#player.volume_db = float(8)
 			# Set a background
 			cmd.TYPE.BACKGROUND:
-				$BG_Image.visible = true
-				$BG_Image.texture = GetTexture(background_path, cmd.file_name, "." + cmd.file_ext)
+				BG_Image.visible = true
+				BG_Image.texture = BG_Image.Backgrounds[cmd.file_name]
 			# Perform some operation on a variable
 			cmd.TYPE.VARIABLE:
 				var value = Global.GetVar(cmd.var_name)

@@ -2,18 +2,38 @@
 
 [ext_resource type="Script" uid="uid://w6w5k7hpn0vl" path="res://SceneManager/SceneManager.gd" id="1"]
 [ext_resource type="Script" uid="uid://cixcopuuh8tpk" path="res://SceneManager/SceneCharacter.gd" id="2"]
-[ext_resource type="PackedScene" uid="uid://cft4e1k72yhum" path="res://AudioManager/audio_manager.tscn" id="2_51u05"]
+[ext_resource type="Script" uid="uid://3i4a3klyl47y" path="res://SceneManager/bg_image.gd" id="2_ra7tg"]
 [ext_resource type="Texture2D" uid="uid://c2k6fp5q62qvf" path="res://Assets/characters/treefoot_serious.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://wbtk6nu7y0i2" path="res://Assets/characters/Space_Wizard.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://dftnbpbkyhnv7" path="res://Assets/gui/option_button.png" id="5"]
 [ext_resource type="FontFile" uid="uid://br6imui04o0nk" path="res://Assets/fonts/MaidenOrange-Regular.ttf" id="6"]
-[ext_resource type="Texture2D" uid="uid://xp5jg28lnp5p" path="res://Assets/characters/Jeff.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://4wsnnimqvplx" path="res://Assets/characters/Jeff Angry.png" id="8"]
+[ext_resource type="Resource" uid="uid://ww63xiwu1frg" path="res://Assets/fonts/MaidenOrange-Regular.ttf.font.tres" id="7_ra7tg"]
 [ext_resource type="Texture2D" uid="uid://20upmktl5qlq" path="res://Assets/characters/Greg.png" id="9"]
+[ext_resource type="Resource" uid="uid://bewuyal0lqyoa" path="res://Assets/fonts/CuteFont-Regular.ttf.font.tres" id="9_vl17g"]
 [ext_resource type="Texture2D" uid="uid://cr3ca41ux8oer" path="res://Assets/characters/Barbarian.png" id="10"]
 [ext_resource type="Texture2D" uid="uid://b5004cp3un1hn" path="res://Assets/characters/Alien.png" id="11"]
+[ext_resource type="Resource" uid="uid://bpk4dflt544f" path="res://Assets/fonts/belligerent.ttf.font.tres" id="11_v2t8j"]
 [ext_resource type="Texture2D" uid="uid://fxueo3rx56kr" path="res://Assets/characters/SquirrelBoss.png" id="12"]
 [ext_resource type="Texture2D" uid="uid://cmq6wcg7knd5s" path="res://Assets/images/Logo Only.png" id="13"]
+[ext_resource type="Resource" uid="uid://dh45kknc37vm5" path="res://Assets/fonts/JUICE_Regular.ttf.font.tres" id="13_2b6yv"]
+[ext_resource type="Resource" uid="uid://mhowo4ibx48o" path="res://Assets/fonts/LifeSavers-Bold.ttf.font.tres" id="15_yl2j2"]
+[ext_resource type="Texture2D" uid="uid://bklaq6gix0u01" path="res://Assets/images/Alien_Background.png" id="Alien_Background.png"]
+[ext_resource type="Texture2D" uid="uid://be1nap2jv53ft" path="res://Assets/images/Bad_Ending_1.png" id="Bad_Ending_1.png"]
+[ext_resource type="Texture2D" uid="uid://dlalmkfs7hpor" path="res://Assets/images/Bad_Ending_2.png" id="Bad_Ending_2.png"]
+[ext_resource type="Texture2D" uid="uid://csm7atmi10uwp" path="res://Assets/images/Bad_Ending_3.png" id="Bad_Ending_3.png"]
+[ext_resource type="Texture2D" uid="uid://cc6cyx5llxjim" path="res://Assets/images/Barbarian_Background.png" id="Barbarian_Background"]
+[ext_resource type="Texture2D" uid="uid://dumkaikkum7ds" path="res://Assets/images/Black_Background.png" id="Black_Background"]
+[ext_resource type="Texture2D" uid="uid://wuyenmfqeeec" path="res://Assets/images/Intro-God-War.png" id="Intro-God-War.png"]
+[ext_resource type="Texture2D" uid="uid://xa2st6hfmh0v" path="res://Assets/images/Intro.png" id="Intro.png"]
+[ext_resource type="Texture2D" uid="uid://b2ra8nxwq2nd7" path="res://Assets/images/Leaf Litter Title Screen.png" id="Leaf Litter Title Screen.png"]
+[ext_resource type="Texture2D" uid="uid://buw3es0i78j48" path="res://Assets/images/Space_Background.png" id="Space_Background"]
+[ext_resource type="Texture2D" uid="uid://dulgc41vbynys" path="res://Assets/images/Squirrel_Background.png" id="Squirrel_Background"]
+[ext_resource type="Texture2D" uid="uid://c3xqbfv8iag6k" path="res://Assets/images/Squirrel_Fight_Screen.png" id="Squirrel_Fight_Screen.png"]
+[ext_resource type="Texture2D" uid="uid://tab1v0h7pu8d" path="res://Assets/images/Title Screen - Logo.png" id="Title Screen - Logo.png"]
+[ext_resource type="Texture2D" uid="uid://bpkywn7klf4tk" path="res://Assets/images/Title Screen - No Logo.png" id="Title Screen - No Logo.png"]
+[ext_resource type="Texture2D" uid="uid://d1mibcfs17uc6" path="res://Assets/images/Vortex_Screen.png" id="Vortex_Screen.png"]
+[ext_resource type="Texture2D" uid="uid://f8dx5il5bksg" path="res://Assets/images/White_Background.png" id="White_Background"]
+[ext_resource type="Texture2D" uid="uid://bm1ddr704aww5" path="res://Assets/images/Win Screen.png" id="Win Screen.png"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("6"), ExtResource("6")])
@@ -56,8 +76,27 @@ offset_right = 1024.0
 offset_bottom = 600.0
 expand_mode = 1
 stretch_mode = 5
-
-[node name="AudioManager" parent="." unique_id=1900050100 instance=ExtResource("2_51u05")]
+script = ExtResource("2_ra7tg")
+Backgrounds = {
+"Alien_Background": ExtResource("Alien_Background.png"),
+"Bad_Ending_1": ExtResource("Bad_Ending_1.png"),
+"Bad_Ending_2": ExtResource("Bad_Ending_2.png"),
+"Bad_Ending_3": ExtResource("Bad_Ending_3.png"),
+"Barbarian_Background": ExtResource("Barbarian_Background"),
+"Black_Background": ExtResource("Black_Background"),
+"Intro": ExtResource("Intro.png"),
+"Intro-God-War": ExtResource("Intro-God-War.png"),
+"Leaf Litter Title Screen": ExtResource("Leaf Litter Title Screen.png"),
+"Logo Only": ExtResource("13"),
+"Space_Background": ExtResource("Space_Background"),
+"Squirrel_Background": ExtResource("Squirrel_Background"),
+"Squirrel_Fight_Screen": ExtResource("Squirrel_Fight_Screen.png"),
+"Title Screen - Logo": ExtResource("Title Screen - Logo.png"),
+"Title Screen - No Logo": ExtResource("Title Screen - No Logo.png"),
+"Vortex_Screen": ExtResource("Vortex_Screen.png"),
+"White_Background": ExtResource("White_Background"),
+"Win Screen": ExtResource("Win Screen.png")
+}
 
 [node name="Game_Title" type="Sprite2D" parent="." unique_id=289730291]
 position = Vector2(512, 0)
@@ -128,7 +167,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.207843, 0.12549, 0.392157, 1)
 dialogue_background = Color(0.796078, 0.745098, 0.623529, 0.8)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 image_side = -1
 
@@ -144,7 +183,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.207843, 0.12549, 0.392157, 1)
 dialogue_background = Color(0.796078, 0.745098, 0.623529, 0.8)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 image_side = -1
 
@@ -161,7 +200,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.207843, 0.12549, 0.392157, 1)
 dialogue_background = Color(0.796078, 0.745098, 0.623529, 1)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 image_side = -1
 
@@ -179,7 +218,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.8, 0.407843, 0.654902, 1)
 dialogue_background = Color(0.207843, 0.12549, 0.392157, 1)
-dialogue_fontname = "CuteFont-Regular.ttf"
+dialogue_fontloader = ExtResource("9_vl17g")
 dialogue_fontsize = 28
 image_side = 1
 
@@ -197,7 +236,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.419608, 0.0862745, 0.0862745, 1)
 dialogue_background = Color(0.909804, 0.835294, 0.823529, 1)
-dialogue_fontname = "belligerent.ttf"
+dialogue_fontloader = ExtResource("11_v2t8j")
 dialogue_fontsize = 28
 image_side = 1
 
@@ -215,7 +254,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.533333, 0.807843, 0.356863, 1)
 dialogue_background = Color(0.0901961, 0.239216, 0.278431, 1)
-dialogue_fontname = "JUICE_Regular.ttf"
+dialogue_fontloader = ExtResource("13_2b6yv")
 dialogue_fontsize = 19
 image_side = 1
 
@@ -233,7 +272,7 @@ emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_colour = Color(0.545098, 0.372549, 0.2, 1)
 dialogue_background = Color(0.894118, 0.835294, 0.654902, 1)
-dialogue_fontname = "LifeSavers-Bold.ttf"
+dialogue_fontloader = ExtResource("15_yl2j2")
 dialogue_fontsize = 24
 image_side = 1
 
@@ -249,7 +288,7 @@ character_full_name = "TEXT"
 emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_background = Color(1, 1, 1, 1)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 
 [node name="HR" type="Control" parent="Characters" unique_id=1108068288]
@@ -261,7 +300,7 @@ character_full_name = "HR"
 emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_background = Color(1, 1, 1, 1)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 
 [node name="NobodyLeft" type="Control" parent="Characters" unique_id=628187339]
@@ -275,7 +314,7 @@ character_abbreviation = "0L"
 emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_background = Color(1, 1, 1, 1)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 image_side = -1
 
@@ -290,21 +329,9 @@ character_abbreviation = "0R"
 emotion_keywords = Array[String](["serious"])
 emotion_images = Array[Texture2D]([ExtResource("3")])
 dialogue_background = Color(1, 1, 1, 1)
-dialogue_fontname = "MaidenOrange-Regular.ttf"
+dialogue_fontloader = ExtResource("7_ra7tg")
 dialogue_fontsize = 28
 image_side = 1
-
-[node name="Jeff" type="Control" parent="Characters" unique_id=1993726293]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("2")
-character_abbreviation = "JEFF"
-neutral_image = ExtResource("7")
-emotion_keywords = Array[String](["ANGRY"])
-emotion_images = Array[Texture2D]([ExtResource("8")])
-dialogue_fontname = "CaveatBrush-Regular.ttf"
 
 [node name="BranchOptions" type="GridContainer" parent="." unique_id=989443343]
 layout_mode = 0

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SceneManagerFontLoader" format=3 uid="uid://bvg8ats7giehi"]
+
+[ext_resource type="FontFile" uid="uid://cbf1vlqcrnvn0" path="res://Assets/fonts/JUICE_Light.ttf" id="1_be447"]
+[ext_resource type="Script" path="res://Assets/fonts/SceneManagerFontLoader.gd" id="2_18ucc"]
+
+[resource]
+script = ExtResource("2_18ucc")
+fontfile = ExtResource("1_be447")

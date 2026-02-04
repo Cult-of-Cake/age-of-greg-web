@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SceneManagerFontLoader" format=3 uid="uid://mhowo4ibx48o"]
+
+[ext_resource type="FontFile" uid="uid://0vyejrguroef" path="res://Assets/fonts/LifeSavers-Bold.ttf" id="1_ecirb"]
+[ext_resource type="Script" path="res://Assets/fonts/SceneManagerFontLoader.gd" id="2_wsx60"]
+
+[resource]
+script = ExtResource("2_wsx60")
+fontfile = ExtResource("1_ecirb")

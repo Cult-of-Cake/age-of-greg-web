@@ -1,9 +1,81 @@
 [gd_scene format=3 uid="uid://cft4e1k72yhum"]
 
 [ext_resource type="Script" uid="uid://kgaffppmjeud" path="res://AudioManager/audio_manager.gd" id="1_eufxx"]
+[ext_resource type="AudioStream" uid="uid://dl1shopesmbtp" path="res://Assets/audio/80s_Synthwave.wav" id="2_rm57j"]
+[ext_resource type="AudioStream" uid="uid://bteadj25pd66b" path="res://Assets/audio/ComputerSmash.wav" id="3_mb77i"]
+[ext_resource type="AudioStream" uid="uid://du2xkqk0ri6do" path="res://Assets/audio/ComputerWarp.wav" id="4_31m57"]
+[ext_resource type="AudioStream" uid="uid://di7egdoyvogq0" path="res://Assets/audio/GREG_COSMOS.wav" id="5_blu82"]
+[ext_resource type="AudioStream" uid="uid://btwk1vu4xilag" path="res://Assets/audio/GREG_GK.wav" id="6_u3l6x"]
+[ext_resource type="AudioStream" uid="uid://bhy2yhscqfvf6" path="res://Assets/audio/GREG_HEH.wav" id="7_gn3uf"]
+[ext_resource type="AudioStream" uid="uid://c3262elxi36li" path="res://Assets/audio/GREG_HOW.wav" id="8_yw4yk"]
+[ext_resource type="AudioStream" uid="uid://bsxcgk2g02vah" path="res://Assets/audio/GREG_LETMESEE.wav" id="9_gaiv4"]
+[ext_resource type="AudioStream" uid="uid://cvhuloa3jtx0a" path="res://Assets/audio/GREG_NOTNOW.wav" id="10_3e4x7"]
+[ext_resource type="AudioStream" uid="uid://8hxgfigitfij" path="res://Assets/audio/GREG_SIGH.wav" id="11_10pyg"]
+[ext_resource type="AudioStream" uid="uid://l0u32r7vxhhy" path="res://Assets/audio/GREG_TAKETHAT.wav" id="12_gw61o"]
+[ext_resource type="AudioStream" uid="uid://danclgjn85qsj" path="res://Assets/audio/GREG_UGH.wav" id="13_reoa6"]
+[ext_resource type="AudioStream" uid="uid://c7a4eryv6rwww" path="res://Assets/audio/GREG_WAIT.wav" id="14_lukcs"]
+[ext_resource type="AudioStream" uid="uid://c0moesxj6w2au" path="res://Assets/audio/GREG_YEAHYEAH.wav" id="15_weh0u"]
+[ext_resource type="AudioStream" uid="uid://c0676gnek0cs8" path="res://Assets/audio/MalwareArm.wav" id="16_2on3m"]
+[ext_resource type="AudioStream" uid="uid://xanrynoou5u6" path="res://Assets/audio/SQUIRREL_CURSEYOU.wav" id="17_jx04e"]
+[ext_resource type="AudioStream" uid="uid://ro713pxcno7o" path="res://Assets/audio/SQUIRREL_LAUGH.wav" id="18_td2d4"]
+[ext_resource type="AudioStream" uid="uid://dvkgslecj7qy4" path="res://Assets/audio/SQUIRREL_NOOO.wav" id="19_r7lyq"]
+[ext_resource type="AudioStream" uid="uid://dpmg1teuwhlss" path="res://Assets/audio/SQUIRREL_SQUIRRELBOSS.wav" id="20_emk2x"]
+[ext_resource type="AudioStream" uid="uid://svhttdah5hom" path="res://Assets/audio/SQUIRREL_UMM.wav" id="21_glp6s"]
+[ext_resource type="AudioStream" uid="uid://dn73fh77rvxi1" path="res://Assets/audio/THOGRA_CRAFTY_WIZARD.wav" id="22_s3sq5"]
+[ext_resource type="AudioStream" uid="uid://c7gcp165ayfr8" path="res://Assets/audio/THOGRA_FIEND.wav" id="23_p6b08"]
+[ext_resource type="AudioStream" uid="uid://blp0kgqlpy82p" path="res://Assets/audio/THOGRA_FORGLORY.wav" id="24_h38ue"]
+[ext_resource type="AudioStream" uid="uid://b4pmxbu2wki75" path="res://Assets/audio/THOGRA_RAWGH.wav" id="25_h15p4"]
+[ext_resource type="AudioStream" uid="uid://cckqtks7yc20n" path="res://Assets/audio/THOGRA_YES.wav" id="26_uruli"]
+[ext_resource type="AudioStream" uid="uid://bt2incd4rymya" path="res://Assets/audio/TRIA303_AH.wav" id="27_qf33q"]
+[ext_resource type="AudioStream" uid="uid://bw1plwvs2b2yo" path="res://Assets/audio/TRIA303_CAME_IN_PEACE.wav" id="28_r3xpf"]
+[ext_resource type="AudioStream" uid="uid://cjcbo55ty1mmf" path="res://Assets/audio/TRIA303_I_DONT_KNOW.wav" id="29_fc51k"]
+[ext_resource type="AudioStream" uid="uid://bex36umgwa58d" path="res://Assets/audio/TRIA303_NOOO.wav" id="30_rsr5o"]
+[ext_resource type="AudioStream" uid="uid://emefhyln2e72" path="res://Assets/audio/TRIA303_PRIMATIVE.wav" id="31_jnsmt"]
+[ext_resource type="AudioStream" uid="uid://dnajuk6vkx56" path="res://Assets/audio/ZAXYSS_CURSE.wav" id="32_l5o7w"]
+[ext_resource type="AudioStream" uid="uid://cjxr1qhogxagx" path="res://Assets/audio/ZAXYSS_DOYOUNOTSEE.wav" id="33_450r6"]
+[ext_resource type="AudioStream" uid="uid://woawuij54rq" path="res://Assets/audio/ZAXYSS_HEH.wav" id="34_4e117"]
+[ext_resource type="AudioStream" uid="uid://dxvbhrob8qg6c" path="res://Assets/audio/ZAXYSS_TELLME.wav" id="35_u5vjj"]
+[ext_resource type="AudioStream" uid="uid://7k0kolnj28uh" path="res://Assets/audio/ZAXYSS_TICKET.wav" id="36_vq45l"]
 
 [node name="AudioManager" type="Node2D" unique_id=1900050100]
 script = ExtResource("1_eufxx")
+sounds = {
+"80s_Synthwave": ExtResource("2_rm57j"),
+"ComputerSmash": ExtResource("3_mb77i"),
+"ComputerWarp": ExtResource("4_31m57"),
+"GREG_COSMOS": ExtResource("5_blu82"),
+"GREG_GK": ExtResource("6_u3l6x"),
+"GREG_HEH": ExtResource("7_gn3uf"),
+"GREG_HOW": ExtResource("8_yw4yk"),
+"GREG_LETMESEE": ExtResource("9_gaiv4"),
+"GREG_NOTNOW": ExtResource("10_3e4x7"),
+"GREG_SIGH": ExtResource("11_10pyg"),
+"GREG_TAKETHAT": ExtResource("12_gw61o"),
+"GREG_UGH": ExtResource("13_reoa6"),
+"GREG_WAIT": ExtResource("14_lukcs"),
+"GREG_YEAHYEAH": ExtResource("15_weh0u"),
+"MalwareArm": ExtResource("16_2on3m"),
+"SQUIRREL_CURSEYOU": ExtResource("17_jx04e"),
+"SQUIRREL_LAUGH": ExtResource("18_td2d4"),
+"SQUIRREL_NOOO": ExtResource("19_r7lyq"),
+"SQUIRREL_SQUIRRELBOSS": ExtResource("20_emk2x"),
+"SQUIRREL_UMM": ExtResource("21_glp6s"),
+"THOGRA_CRAFTY_WIZARD": ExtResource("22_s3sq5"),
+"THOGRA_FIEND": ExtResource("23_p6b08"),
+"THOGRA_FORGLORY": ExtResource("24_h38ue"),
+"THOGRA_RAWGH": ExtResource("25_h15p4"),
+"THOGRA_YES": ExtResource("26_uruli"),
+"TRIA303_AH": ExtResource("27_qf33q"),
+"TRIA303_CAME_IN_PEACE": ExtResource("28_r3xpf"),
+"TRIA303_I_DONT_KNOW": ExtResource("29_fc51k"),
+"TRIA303_NOOO": ExtResource("30_rsr5o"),
+"TRIA303_PRIMATIVE": ExtResource("31_jnsmt"),
+"ZAXYSS_CURSE": ExtResource("32_l5o7w"),
+"ZAXYSS_DOYOUNOTSEE": ExtResource("33_450r6"),
+"ZAXYSS_HEH": ExtResource("34_4e117"),
+"ZAXYSS_TELLME": ExtResource("35_u5vjj"),
+"ZAXYSS_TICKET": ExtResource("36_vq45l")
+}
 
 [node name="SFX_Player" type="AudioStreamPlayer" parent="." unique_id=1755937150]
 

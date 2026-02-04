@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SceneManagerFontLoader" format=3 uid="uid://ww63xiwu1frg"]
+
+[ext_resource type="FontFile" uid="uid://br6imui04o0nk" path="res://Assets/fonts/MaidenOrange-Regular.ttf" id="1_kqw6j"]
+[ext_resource type="Script" path="res://Assets/fonts/SceneManagerFontLoader.gd" id="2_mbbtq"]
+
+[resource]
+script = ExtResource("2_mbbtq")
+fontfile = ExtResource("1_kqw6j")

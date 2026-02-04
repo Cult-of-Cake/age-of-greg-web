@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SceneManagerFontLoader" format=3 uid="uid://klwjxvhyc4fg"]
+
+[ext_resource type="FontFile" uid="uid://dt8w5mnv1u81r" path="res://Assets/fonts/JUICE_Bold_Italic.ttf" id="1_15fh0"]
+[ext_resource type="Script" path="res://Assets/fonts/SceneManagerFontLoader.gd" id="2_5pnsc"]
+
+[resource]
+script = ExtResource("2_5pnsc")
+fontfile = ExtResource("1_15fh0")
